@@ -363,11 +363,9 @@ tr:hover {
   display: block;
   border-radius: 8px;
   margin-top: 10px;
-  justify-content: fit-content;
 }
 .port-vid video{
   width: 100%;
-  justify-content: fit-content;
 }
 .port-vid > video {
   width: 70%;
