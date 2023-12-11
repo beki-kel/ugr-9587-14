@@ -7,115 +7,122 @@
     <title>MyResume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+    <link href="./css/grid-styles.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
+
 </head>
 
-<body>
+    <body class="body-other">
 
-    <header>
-        <nav class="hamburger">
-            <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
-            <ul>
-                <div class="hamburger-content">
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="aboutnew.html">About</a></li>
-                  <li><a href="resume.html">Resume</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="testimonials.html">Testimonials</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </div>
+    <header class="header">
+    <nav class="hamburger">
+        <div class="hamburger__menu">
+            <i class="hamburger__icon fa-solid fa-bars"></i>
+        </div>
+        <div class="hamburger__content">
+            <ul class="hamburger__list">
+            
+                <li class="hamburger__item"><img src="./images/home-fav.png" alt="home-page" class="hamburger__img"><a href="home.html" class="hamburger__link">  Home</a></li>
+                <li class="hamburger__item"><img src="./images/newabout.png" alt="about" class="hamburger__img"><a href="aboutnew.html" class="hamburger__link"> About</a></li>
+                <li class="hamburger__item"><img src="./images/newresume.png" alt="resume" class="hamburger__img"><a href="resume.html" class="hamburger__link"> Resume</a></li>
+                <li class="hamburger__item"><img src="./images/newportfolio.png" alt="portfolio" class="hamburger__img"><a href="portfolio.html" class="hamburger__link">Portfolio</a></li>
+                <li class="hamburger__item"><img src="./images/newtestim.png" alt="testimonials" class="hamburger__img"><a href="testimonials.html" class="hamburger__link">Testimonials</a></li>
+                <li class="hamburger__item"><img src="./images/newcontct.png" alt="contact" class="hamburger__img"><a href="contact.html" class="hamburger__link"> Contact</a></li>
             </ul>
-        </nav>
+        </div>
+        
+    </nav>
     </header>
+    
+    <main class="portfolio">
 
-    <main id="portfolio">
-        
-            <article>
-                <h2>Portfolio</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-            </article>
-
-            <article>
-                <h3>Filter</h3>
-                <ul>
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-app">Web1</li>
-                    <li data-filter=".filter-card">Web2</li>
-                    <li data-filter=".filter-web">Video</li>
-                    <li data-filter=".filter-web">Audio</li>
-                </ul>
-            </article>
-
-            <article>
-                <div>
-                    <div class="port-fig">
-                        <h4>Web 1</h4>
-                        <p>Web</p>
-                        <figure class="port-fig-continer">
-                            <img src="images/web1.jpg" alt="Web Screenshot">
-                            <figcaption>
-                                <p>
-                                    Explore this captivating web project that I had the pleasure of working on. In this endeavor, I combined creativity and functionality to deliver an engaging user experience. The sleek design and intuitive navigation enhance the overall usability, ensuring a seamless journey for visitors. From concept to execution, every detail has been meticulously crafted to reflect a harmonious blend of aesthetics and purpose. Take a closer look at this snapshot to witness the intersection of design innovation and user-centric development.
-                                </p>
-                                <a href="https://www.bing.com/images/search?view=detailV2&ccid=fmzbGsps&id=AE6D95BFDC2C149A84790C21482843B3C9DB0EFC&thid=OIP.fmzbGsps544G71GL4_4YugHaFH&mediaurl=https%3a%2f%2fmondrian.mashable.com%2fwp-content%25252Fuploads%25252F2007%25252F08%25252Fwebshots.jpg%25252Ffull-fit-in__1200x2000.jpg%3fsignature%3dO3V6bYerePZvJI7IXmE5yHVLNx0%3d%26source%3dhttp%3a%252F%252Fmashable.com&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.7e6cdb1aca6ce78e06ef518be3fe18ba%3frik%3d%252fA7bybNDKEghDA%26pid%3dImgRaw%26r%3d0&exph=2000&expw=2894&q=web+screenshot&simid=608010337131241555&FORM=IRPRST&ck=EB620170608F2BC6916FD9D152BC347D&selectedIndex=0">More</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="port-fig">
-                        <h4>Web 2</h4>
-                        <p>Web</p>
-                        <figure class="port-fig-continer">
-                            <img src="images/web2.jpg" alt="Web Screenshot">
-                            <figcaption>
-                                <p>
-                                    Explore this captivating web project that I had the pleasure of working on. In this endeavor, I combined creativity and functionality to deliver an engaging user experience. The sleek design and intuitive navigation enhance the overall usability, ensuring a seamless journey for visitors. From concept to execution, every detail has been meticulously crafted to reflect a harmonious blend of aesthetics and purpose. Take a closer look at this snapshot to witness the intersection of design innovation and user-centric development.
-                                </p>
-                                <a href="https://blog.eduonix.com/wp-content/uploads/2014/01/final_homepage1.jpg">More</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="port-vid">
-                        <h4>Video</h4>
-                        <p>Video</p>
-                        <figure >
-                            <video src="images/Day%20in%20the%20life%20of%20a%20Web%20Designer.mp4" controls autoplay>Day in the life of a Web Designer</video>
-
-                        </figure>
-                    </div>
-
-                    <div>
-                        <h4>Audio</h4>
-                        <p>Audio</p>
-                        <figure>
-                            <audio src="./images/አገለግልሃለሁ_Ageleglihalew_New_Amharic_Protestant_Mezmur_2023_20.m4a" controls autoplay></audio>
-                        </figure>
-                    </div>
-
+        <article class="portfolio-item">
+            <h2 class="portfolio-item__title">Portfolio</h2>
+            <p class="portfolio-item__description">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </article>
+    
+        <article class="portfolio-item">
+            <h3 class="portfolio-item__filter-title">Filter</h3>
+            <ul class="portfolio-item__filter-list">
+                <li class="portfolio-item__filter filter-active" data-filter="*">All</li>
+                <li class="portfolio-item__filter" data-filter=".filter-app">Web1</li>
+                <li class="portfolio-item__filter" data-filter=".filter-card">Web2</li>
+                <li class="portfolio-item__filter" data-filter=".filter-web">Video</li>
+                <li class="portfolio-item__filter" data-filter=".filter-web">Audio</li>
+            </ul>
+        </article>
+    
+        <article class="portfolio-item">
+            <div class="portfolio-item__content">
+            <div class="portfolio-item__figures">
+                <div class="portfolio-item__figure">
+                    <h4 class="portfolio-item__figure-title">Web 1</h4>
+                    <p class="portfolio-item__figure-category">Web</p>
+                    <figure class="portfolio-item__figure-container">
+                        <img class="portfolio-item__image" src="images/web1.jpg" alt="Web Screenshot">
+                        <figcaption class="portfolio-item__caption">
+                            <p class="portfolio-item__caption-text">
+                                Explore this captivating web project that I had the pleasure of working on. In this endeavor, I combined creativity and functionality to deliver an engaging user experience. The sleek design and intuitive navigation enhance the overall usability, ensuring a seamless journey for visitors. From concept to execution, every detail has been meticulously crafted to reflect a harmonious blend of aesthetics and purpose. Take a closer look at this snapshot to witness the intersection of design innovation and user-centric development.
+                            </p>
+                            <a class="portfolio-item__more-link" href="https://www.bing.com/images/search?view=detailV2&ccid=fmzbGsps&id=AE6D95BFDC2C149A84790C21482843B3C9DB0EFC&thid=OIP.fmzbGsps544G71GL4_4YugHaFH&mediaurl=https%3a%2f%2fmondrian.mashable.com%2fwp-content%25252Fuploads%25252F2007%25252F08%25252Fwebshots.jpg%25252Ffull-fit-in__1200x2000.jpg%3fsignature%3dO3V6bYerePZvJI7IXmE5yHVLNx0%3d%26source%3dhttp%3a%252F%252Fmashable.com&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.7e6cdb1aca6ce78e06ef518be3fe18ba%3frik%3d%252fA7bybNDKEghDA%26pid%3dImgRaw%26r%3d0&exph=2000&expw=2894&q=web+screenshot&simid=608010337131241555&FORM=IRPRST&ck=EB620170608F2BC6916FD9D152BC347D&selectedIndex=0">More</a>
+                        </figcaption>
+                    </figure>
                 </div>
-            </article>
+    
+                <div class="portfolio-item__figure">
+                    <h4 class="portfolio-item__figure-title">Web 2</h4>
+                    <p class="portfolio-item__figure-category">Web</p>
+                    <figure class="portfolio-item__figure-container">
+                        <img class="portfolio-item__image" src="images/web2.jpg" alt="Web Screenshot">
+                        <figcaption class="portfolio-item__caption">
+                            <p class="portfolio-item__caption-text">
+                                Explore this captivating web project that I had the pleasure of working on. In this endeavor, I combined creativity and functionality to deliver an engaging user experience. The sleek design and intuitive navigation enhance the overall usability, ensuring a seamless journey for visitors. From concept to execution, every detail has been meticulously crafted to reflect a harmonious blend of aesthetics and purpose. Take a closer look at this snapshot to witness the intersection of design innovation and user-centric development.
+                            </p>
+                            <a class="portfolio-item__more-link" href="https://blog.eduonix.com/wp-content/uploads/2014/01/final_homepage1.jpg">More</a>
+                        </figcaption>
+                    </figure>
+                </div>
 
-        
-    </main>
-
-    <footer>
-        <section>
-            <h2>Contact Me</h2>
-            <div>
-                <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-                <a href="#"><img src="images/faceb.jpg" alt="Facebook"></a>
-                <a href="#"><img src="images/instag.jpg" alt="Instagram"></a>
-                <a href="#"><img src="images/tele.jpg" alt="Telegram"></a>
-                <a href="#"><img src="images/link.jpg" alt="LinkedIn"></a>
             </div>
+            <div  class="portfolio-item__medias">
+                <div class="portfolio-item__figure portfolio-item__video">
+                    <h4 class="portfolio-item__figure-title">Video</h4>
+                    <p class="portfolio-item__figure-category">Video</p>
+                    <figure class="portfolio-item__figure-container">
+                        <video class="portfolio-item__video-element" src="images/Day%20in%20the%20life%20of%20a%20Web%20Designer.mp4" controls autoplay>Day in the life of a Web Designer</video>
+                    </figure>
+                </div>
+    
+                <div class="portfolio-item__figure portfolio-item__audio">
+                    <h4 class="portfolio-item__figure-title">Audio</h4>
+                    <p class="portfolio-item__figure-category">Audio</p>
+                    <figure class="portfolio-item__figure-container">
+                        <audio class="portfolio-item__audio-element" src="./images/አገለግልሃለሁ_Ageleglihalew_New_Amharic_Protestant_Mezmur_2023_20.m4a" controls autoplay></audio>
+                    </figure>
+                </div>
+            </div>
+            </div>
+        </article>
+    
+    </main>
+    
 
-            <p>&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
-        </section>
+    <footer class="page-footer">
+    <section class="footer-section">
+        <h2 class="footer-section__heading">Contact Me</h2>
+        <div class="footer-section__social">
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/twitter.jpg" alt="Twitter"></a>
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/faceb.jpg" alt="Facebook"></a>
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/instag.jpg" alt="Instagram"></a>
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/tele.jpg" alt="Telegram"></a>
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/link.jpg" alt="LinkedIn"></a>
+        </div>
+        <p class="footer-section__copyright">&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
+    </section>
     </footer>
 </body>
 
 </html>
-

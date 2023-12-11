@@ -2,137 +2,144 @@
 <html lang="en">
 
 <head>
-  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyResume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
     <link href="./css/styles.css" rel="stylesheet">
-  
-  </head>
-  
-  <body>
-  
-    <header>
-        <nav class="hamburger">
-            <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
-            <ul>
-                <div class="hamburger-content">
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="aboutnew.html">About</a></li>
-                  <li><a href="resume.html">Resume</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="testimonials.html">Testimonials</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </div>
+
+</head>
+
+    <body class="body-other">
+
+    <header class="header">
+    <nav class="hamburger">
+        <div class="hamburger__menu">
+            <i class="hamburger__icon fa-solid fa-bars"></i>
+        </div>
+        <div class="hamburger__content">
+            <ul class="hamburger__list">
+            
+                <li class="hamburger__item"><img src="./images/home-fav.png" alt="home-page" class="hamburger__img"><a href="home.html" class="hamburger__link">  Home</a></li>
+                <li class="hamburger__item"><img src="./images/newabout.png" alt="about" class="hamburger__img"><a href="aboutnew.html" class="hamburger__link"> About</a></li>
+                <li class="hamburger__item"><img src="./images/newresume.png" alt="resume" class="hamburger__img"><a href="resume.html" class="hamburger__link"> Resume</a></li>
+                <li class="hamburger__item"><img src="./images/newportfolio.png" alt="portfolio" class="hamburger__img"><a href="portfolio.html" class="hamburger__link">Portfolio</a></li>
+                <li class="hamburger__item"><img src="./images/newtestim.png" alt="testimonials" class="hamburger__img"><a href="testimonials.html" class="hamburger__link">Testimonials</a></li>
+                <li class="hamburger__item"><img src="./images/newcontct.png" alt="contact" class="hamburger__img"><a href="contact.html" class="hamburger__link"> Contact</a></li>
             </ul>
-        </nav>
+        </div>
+        
+    </nav>
     </header>
 
-  <main id="about">
-    <section>
-      <header>
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio page where I showcase a collection of my work. I am passionate about creating unique and impactful projects that demonstrate my skills and creativity. Explore the samples below to get a glimpse of my diverse range of work.</p>
-      </header>
-
-      <div class="about-content">
-        <div class="about-image">
-          <img src="images/photo.jpg" alt="Profile Image">
-          <h3>UI/UX Designer &amp; Web Developer.</h3>
+    <main class="about">
+        <section class="about-section">
+        <header class="about-section__header">
+            <h2 class="about-section__title">About Me</h2>
+            <p class="about-section__description">Welcome to my portfolio page where I showcase a collection of my work. I am passionate about creating unique and impactful projects that demonstrate my skills and creativity. Explore the samples below to get a glimpse of my diverse range of work.</p>
+        </header>
+    
+        <div class="about-section__content">
+            <div class="about-image">
+            <img src="images/photo.jpg" alt="Profile Image" class="about-image__img">
+            </div>
+    
+            <div class="about-details">
+                <article class="about-details__paragraph">
+                    <h3 class="about-image__title">UI/UX Designer &amp; Web Developer.</h3>
+                    <p class="about-details__text">
+                    As a UI/UX Designer and Web Developer, I am dedicated to creating visually appealing and user-friendly experiences. My projects are a blend of design innovation and technical expertise. Explore the samples below to see how I bring ideas to life and solve complex challenges through thoughtful design and development.
+                    </p>
+                </article>
+            <table class="about-details__table">
+                <tr>
+                <td><strong>Birthday:</strong></td>
+                <td>4 July 2003</td>
+                </tr>
+                <tr>
+                <td><strong>Phone:</strong></td>
+                <td>+251-962-014-763</td>
+                </tr>
+                <tr>
+                <td><strong>City:</strong></td>
+                <td>Addis Ababa, Ethiopia</td>
+                </tr>
+                <tr>
+                <td><strong>Age:</strong></td>
+                <td>20</td>
+                </tr>
+                <tr>
+                <td><strong>Degree:</strong></td>
+                <td>Software Eng. BSc.</td>
+                </tr>
+                <tr>
+                <td><strong>Email:</strong></td>
+                <td>
+                    <a href="mailto:bereket.kelay@aait.edu.et" class="about-details__email-link">bereket.kelay@aait.edu.et</a>
+                </td>
+                </tr>
+                <tr>
+                <td><strong>Freelance:</strong></td>
+                <td>Available</td>
+                </tr>
+            </table>
+            </div>
         </div>
+        </section>
+    
+        <article class="about__facts-article">
+        
+            <header class="facts-article__header">
+            <h2 class="facts-article__title">Facts About Me</h2>
+            <p class="facts-article__description">This section contains facts about me, providing insights into various aspects of my professional and personal life. Learn more about my achievements, projects, support hours, and awards.</p>
+        </header>
+    
+        <div class=".about__facts-container">
+            
+            <div class="facts-container__facts">
+            <i class="fact__icon"></i>
+            <span class="fact__count" >232</span>
+            <p class="fact__text">Happy Clients</p>
+            </div>
 
-        <div class="about-details">
-          <p>
-            As a UI/UX Designer and Web Developer, I am dedicated to creating visually appealing and user-friendly experiences. My projects are a blend of design innovation and technical expertise. Explore the samples below to see how I bring ideas to life and solve complex challenges through thoughtful design and development.
-          </p>
+            <div class="facts-container__facts">
+                    <i class="facts__icon"></i>
+                    <span class="facts__count" >521</span>
+                    <p class="facts__text">Projects</p>
+            </div>
 
-          <table>
-            <tr>
-              <td><strong>Birthday:</strong></td>
-              <td>4 July 2003</td>
-            </tr>
-            <tr>
-              <td><strong>Phone:</strong></td>
-              <td>+251-962-014-763</td>
-            </tr>
-            <tr>
-              <td><strong>City:</strong></td>
-              <td>Addis Ababa, Ethiopia</td>
-            </tr>
-            <tr>
-              <td><strong>Age:</strong></td>
-              <td>20</td>
-            </tr>
-            <tr>
-              <td><strong>Degree:</strong></td>
-              <td>Software Eng. BSc.</td>
-            </tr>
-            <tr>
-              <td><strong>Email:</strong></td>
-              <td><a href="mailto:bereket.kelay@aait.edu.et">bereket.kelay@aait.edu.et</a></td>
-            </tr>
-            <tr>
-              <td><strong>Freelance:</strong></td>
-              <td>Available</td>
-            </tr>
-          </table>
+            <div class="facts-container__facts">
+                <i class="facts__icon"></i>
+                <span class="facts__count" >1463</span>
+                <p class="facts__text">Hours Of Support</p>
+            </div>
+            
+            <div class="facts-container__facts">
+                <i class="facts__icon"></i>
+                <span class="facts__count" >25</span>
+                <p class="facts__text">Awards</p>
+            </div>
         </div>
-      </div>
+        </article>
+    </main>
+
+    <footer class="page-footer">
+    <section class="footer-section">
+        <h2 class="footer-section__heading">Contact Me</h2>
+        <div class="footer-section__social">
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/twitter.jpg" alt="Twitter"></a>
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/faceb.jpg" alt="Facebook"></a>
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/instag.jpg" alt="Instagram"></a>
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/tele.jpg" alt="Telegram"></a>
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/link.jpg" alt="LinkedIn"></a>
+        </div>
+        <p class="footer-section__copyright">&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
     </section>
-
-    <article>
-      <header>
-        <h2>Facts About Me</h2>
-        <p>This section contains facts about me, providing insights into various aspects of my professional and personal life. Learn more about my achievements, projects, support hours, and awards.</p>
-      </header>
-
-      <div class="facts-container">
-        <div class="fact">
-          <i></i>
-          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1">232</span>
-          <p>Happy Clients</p>
-        </div>
-
-        <div class="fact">
-          <i></i>
-          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1">521</span>
-          <p>Projects</p>
-        </div>
-
-        <div class="fact">
-          <i></i>
-          <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1">1463</span>
-          <p>Hours Of Support</p>
-        </div>
-
-        <div class="fact">
-          <i></i>
-          <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1">25</span>
-          <p>Awards</p>
-        </div>
-      </div>
-    </article>
-  </main>
-
-  <footer>
-    <section>
-      <h2>Contact Me</h2>
-      <div>
-        <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-        <a href="#"><img src="images/faceb.jpg" alt="Facebook"></a>
-        <a href="#"><img src="images/instag.jpg" alt="Instagram"></a>
-        <a href="#"><img src="images/tele.jpg" alt="Telegram"></a>
-        <a href="#"><img src="images/link.jpg" alt="LinkedIn"></a>
-      </div>
-
-      <p>&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
-    </section>
-  </footer>
+    </footer>
 </body>
 
 </html>
-

@@ -2,68 +2,66 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyResume</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="./css/styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyResume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+    <link href="./css/styles.css" rel="stylesheet">
 
 </head>
 
-<body>
+    <body class="body-home">
 
-  <header>
-      <nav class="hamburger">
-          <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
-          <ul>
-              <div class="hamburger-content">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutnew.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </div>
-          </ul>
-      </nav>
-  </header>
-
-  <main id="home">
-      <article>
-        <h2>Bereket Kelay</h2>
-        <p>I'm a <span>Designer, Developer, Freelancer, Musician</span></p>
-        <div>
-        <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-        <a href="#"><img src="images/faceb.jpg" alt="Facebook"></a>
-        <a href="#"><img src="images/instag.jpg" alt="Instagram"></a>
-        <a href="#"><img src="images/tele.jpg" alt="Telegram"></a>
-        <a href="#"><img src="images/link.jpg" alt="LinkedIn"></a>
+    <header class="header">
+    <nav class="hamburger">
+        <div class="hamburger__menu">
+            <i class="hamburger__icon fa-solid fa-bars"></i>
         </div>
-      </article>
-  </main>
+        <div class="hamburger__content">
+            <ul class="hamburger__list">
+            
+                <li class="hamburger__item"><img src="./images/home-fav.png" alt="home-page" class="hamburger__img"><a href="home.html" class="hamburger__link">  Home</a></li>
+                <li class="hamburger__item"><img src="./images/newabout.png" alt="about" class="hamburger__img"><a href="aboutnew.html" class="hamburger__link"> About</a></li>
+                <li class="hamburger__item"><img src="./images/newresume.png" alt="resume" class="hamburger__img"><a href="resume.html" class="hamburger__link"> Resume</a></li>
+                <li class="hamburger__item"><img src="./images/newportfolio.png" alt="portfolio" class="hamburger__img"><a href="portfolio.html" class="hamburger__link">Portfolio</a></li>
+                <li class="hamburger__item"><img src="./images/newtestim.png" alt="testimonials" class="hamburger__img"><a href="testimonials.html" class="hamburger__link">Testimonials</a></li>
+                <li class="hamburger__item"><img src="./images/newcontct.png" alt="contact" class="hamburger__img"><a href="contact.html" class="hamburger__link"> Contact</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    </header>
+    <main class="profile">
+        <article class="profile__info">
+        <h2 class="profile__name">Bereket Kelay</h2>
+        <p class="profile__description">I'm a <span class="profile__role">Designer, Developer, Freelancer, Musician</span></p>
+        <div class="profile__social">
+            <a href="#" class="profile__social-link"><img class="profile__social-img" src="images/twitter.jpg" alt="Twitter"></a>
+            <a href="#" class="profile__social-link"><img class="profile__social-img" src="images/faceb.jpg" alt="Facebook"></a>
+            <a href="#" class="profile__social-link"><img class="profile__social-img" src="images/instag.jpg" alt="Instagram"></a>
+            <a href="#" class="profile__social-link"><img class="profile__social-img" src="images/tele.jpg" alt="Telegram"></a>
+            <a href="#" class="profile__social-link"><img class="profile__social-img" src="images/link.jpg" alt="LinkedIn"></a>
+        </div>
+        </article>
+    </main>
 
-  <footer>
-    <section>
-      <h2>Contact Me</h2>
-      <div>
-        <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-        <a href="#"><img src="images/faceb.jpg" alt="Facebook"></a>
-        <a href="#"><img src="images/instag.jpg" alt="Instagram"></a>
-        <a href="#"><img src="images/tele.jpg" alt="Telegram"></a>
-        <a href="#"><img src="images/link.jpg" alt="LinkedIn"></a>
-      </div>
-
-      <p>&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
+    <footer class="page-footer">
+    <section class="footer-section">
+        <h2 class="footer-section__heading">Contact Me</h2>
+        <div class="footer-section__social">
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/twitter.jpg" alt="Twitter"></a>
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/faceb.jpg" alt="Facebook"></a>
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/instag.jpg" alt="Instagram"></a>
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/tele.jpg" alt="Telegram"></a>
+        <a href="#" class="footer-section__social-link"><img class="footer-section__social-img" src="images/link.jpg" alt="LinkedIn"></a>
+        </div>
+        <p class="footer-section__copyright">&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
     </section>
-
-    
-      
-  </footer>
+    </footer>
 </body>
 
 </html>
-
-
