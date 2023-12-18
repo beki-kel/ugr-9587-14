@@ -119,14 +119,14 @@ body{
   display: none;
   width: 100%;
   }
-  .hamburger:active .hamburger__content {
-  display: flex;
-  flex-direction: column;
+  .hamburger__item:active{
+    background-color: #333;
   }
   .hamburger__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  background-color: #333;
   }
   .hamburger__item {
   width: 100%;
@@ -248,12 +248,24 @@ body{
 /*home page*/
 
 /*About page*/
+
 .about{
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
   width: 60%;
   flex: 6;
+}
+.animated {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.scroll-trigger {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 .about-section{
   display: flex;
@@ -418,6 +430,8 @@ tr:hover {
       text-align: start;
   }
 }
+
+
 /* about */
 
 /*resume*/
@@ -667,24 +681,29 @@ tr:hover {
   flex: 10;
   align-content: flex-start;
 }
-.testimonial-section-title{
-  display: flex;
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20%;
+.testimonial-section-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
+
+.swiper {
+  width: 80%;
+  height: 60%;
+}
+
+.swiper-button-next{
+  margin-right: 20px;
+}
+
 .swiper-slide{
+  background-color: white;
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  margin-bottom: 50px;
   border-radius: 30px;
-  width: 70%;
-  margin-left: 10%;
 }
+
 .testimonial-img{
   width: 100px;
   height: 100px;
@@ -692,9 +711,10 @@ tr:hover {
   object-fit: cover;
   margin-top: 5%;
 }
-.testimonial-item{
-  width: 50%;
+.testimonial-item {
+  width: 80%;
   text-align: center;
+  margin: 0 auto;
 }
 .testimonials-item__name{
   width: 50%;
@@ -816,10 +836,3 @@ tr:hover {
   }
 }
 /*contact*/
-
-
-
-
-
-
-
