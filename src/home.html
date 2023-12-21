@@ -7,63 +7,149 @@
   <title>MyResume</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
 
-<body>
+<body class="flex flex-col min-h-screen text-black text-lg  bg-cover bg-center bg-no-repeat lg:block"
+      style="background-image: url('./images/background.avif');">
+<div class="flex flex-col justify-around w-full h-screen lg:flex-row ">
+  <header class="flex lg:h-85vh justify-center items-center lg:ml-5">
+      <nav class=" flex flex-col w-full bg-gray-800 text-white text-center py-4 px-2lg:fixed lg:top-0 lg:left-0 lg:z-50 lg:bg-transparent lg:text-black">
+            <i id="menu-icon" class=" text-white text-2xl cursor-pointer ml-70 lg:opacity-0 fa-solid fa-bars"></i>
+          
+            <div class=" flex lg:flex-col items-center justify-center ">
+              <ul id="nav-links" class=" hidden list-none p-0 m-0 flex flex-col justify-center items-center lg:flex" >
+              <li class="flex w-full text-center border-none rounded-full shadow-none m-0  lg:relative lg:mb-6 lg:shadow-md lg:bg-gray-300">
+                <div class="w-12 h-12  object-contain rounded-full overflow-hidden flex items-center justify-center p-2">
+                    <img src="./images/home-fav.png" alt="home-page" class="object-contain w-full h-full">
+                </div>
+                <a href="home.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Home</a>
+              </li>
 
-  <header>
-      <nav class="hamburger">
-          <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
-          <ul>
-              <div class="hamburger-content">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutnew.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact</a></li>
+              <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+                <div class="w-12 h-12  object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+                    <img src="./images/newabout.png" alt="about">
+                </div>
+                <a href="aboutnew.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">About</a>
+            </li>
+
+            <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+              <div class="w-12 h-12  object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+                  <img src="./images/newresume.png" alt="resume">
               </div>
-          </ul>
-      </nav>
-  </header>
+              <a href="resume.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Resume</a>
+          </li>
 
-  <main id="home">
-      <article>
-        <h2>Bereket Kelay</h2>
-        <p>I'm a <span>Designer, Developer, Freelancer, Musician</span></p>
-        <div>
-        <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-        <a href="#"><img src="images/faceb.jpg" alt="Facebook"></a>
-        <a href="#"><img src="images/instag.jpg" alt="Instagram"></a>
-        <a href="#"><img src="images/tele.jpg" alt="Telegram"></a>
-        <a href="#"><img src="images/link.jpg" alt="LinkedIn"></a>
+          <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+            <div class="w-12 h-12 object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+                <img src="./images/newportfolio.png" alt="portfolio">
+            </div>
+            <a href="portfolio.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Portfolio</a>
+        </li>
+
+        <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+          <div class="w-12 h-12 object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+              <img src="./images/newtestim.png" alt="testimonials">
+          </div>
+          <a href="testimonials.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Testimonials</a>
+      </li>
+
+      <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+        <div class="w-12 h-12 object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+            <img src="./images/newcontct.png" alt="contact">
         </div>
-      </article>
-  </main>
-
-  <footer>
-    <section>
-      <h2>Contact Me</h2>
-      <div>
-        <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-        <a href="#"><img src="images/faceb.jpg" alt="Facebook"></a>
-        <a href="#"><img src="images/instag.jpg" alt="Instagram"></a>
-        <a href="#"><img src="images/tele.jpg" alt="Telegram"></a>
-        <a href="#"><img src="images/link.jpg" alt="LinkedIn"></a>
-      </div>
-
-      <p>&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
-    </section>
-
-    
+        <a href="contact.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Contact</a>
+    </li>
+                    
+              </ul>
+          </div>
+          
+      </nav>
+      </header>
       
-  </footer>
-</body>
+      <main class="flex justify-center items-center h-full flex-1">
+          <article class="flex flex-col items-center justify-center text-center">
+          <h2 class="text-2xl font-semibold">Bereket Kelay</h2>
+          <p class="mb-6 mt-6">I'm a <span class="font-bold">Designer, Developer, Freelancer, Musician</span></p>
+          <div class="flex gap-x-5 items-center justify-around">
+              <a href="#" class="profile__social-link">
+                <div class="w-10 h-10 object-cover">
+                  <img class="w-30 h-30" src="images/twitter.jpg" alt="Twitter">
+                </div>
+              </a>
+              <a href="#" class="profile__social-link">
+                <div class="w-10 h-10 object-cover">
+                  <img class="profile__social-img" src="images/faceb.jpg" alt="Facebook">
+                </div>
+              </a>
+              <a href="#" class="profile__social-link">
+                <div class="w-10 h-10 object-cover">
+                  <img class="profile__social-img" src="images/instag.jpg" alt="Instagram">
+                </div>
+              </a>
+              <a href="#" class="profile__social-link">
+                <div class="w-10 h-10 object-cover">
+                  <img class="profile__social-img" src="images/tele.jpg" alt="Telegram">
+                </div>
+              </a>
+              <a href="#" class="profile__social-link">
+                <div class="w-10 h-10 object-cover">
+                  <img class="profile__social-img" src="images/link.jpg" alt="LinkedIn">
+                </div>
+              </a>
+          </div>
+          </article>
+      </main>
+    </div>
 
-</html>
 
+      <footer class="flex justify-center items-center text-center flex-col lg:flex-row mt-auto bg-gray-800 text-white w-full mt-auto">
+      <section class="flex flex-col justify-around p-6">
+          <h2 class="p-6">Contact Me</h2>
+          <div class="flex gap-x-5 items-center justify-around">
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="w-30 h-30" src="images/twitter.jpg" alt="Twitter">
+              </div>
+            </a>
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="profile__social-img" src="images/faceb.jpg" alt="Facebook">
+              </div>
+            </a>
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="profile__social-img" src="images/instag.jpg" alt="Instagram">
+              </div>
+            </a>
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="profile__social-img" src="images/tele.jpg" alt="Telegram">
+              </div>
+            </a>
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="profile__social-img" src="images/link.jpg" alt="LinkedIn">
+              </div>
+            </a>
+        </div>
+          <p class="footer-section__copyright">&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
+      </section>
+      </footer>
 
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const menuIcon = document.getElementById("menu-icon");
+          const navLinks = document.getElementById("nav-links");
+    
+          menuIcon.addEventListener("click", function () {
+            navLinks.classList.toggle("hidden");
+          });
+        });
+      </script>
+
+  </body>
+  
+  </html>
