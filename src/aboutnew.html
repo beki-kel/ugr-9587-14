@@ -2,137 +2,215 @@
 <html lang="en">
 
 <head>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyResume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyResume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-  
-  </head>
-  
-  <body>
-  
-    <header>
-        <nav class="hamburger">
-            <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
-            <ul>
-                <div class="hamburger-content">
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="aboutnew.html">About</a></li>
-                  <li><a href="resume.html">Resume</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="testimonials.html">Testimonials</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col max-h-screen text-black text-lg  bg-gray-100 md:h-screen md:text-2xl lg:text-5xl">
+<div class="flex flex-col justify-around w-full md:justify-center md:items-center lg:flex-row lg:h-screen">
+  <header class="flex  justify-center w-full items-center lg:ml-5 lg:w-auto">
+      <nav class=" flex flex-col w-full bg-gray-800 text-white text-center py-4 px-2lg:fixed lg:top-0 lg:left-0 lg:z-50 lg:bg-transparent lg:text-black">
+            <i id="menu-icon" class=" text-white text-2xl cursor-pointer ml-70 lg:opacity-0 fa-solid fa-bars"></i>
+          
+            <div class=" flex lg:flex-col items-center justify-center ">
+              <ul id="nav-links" class=" hidden list-none p-0 m-0 flex flex-col justify-center items-center lg:flex" >
+              <li class="flex w-full text-center border-none rounded-full shadow-none m-0  lg:relative lg:mb-6 lg:shadow-md lg:bg-gray-300">
+                <div class="w-12 h-12 lg:w-24 lg:h-24 object-contain rounded-full overflow-hidden flex items-center justify-center p-2">
+                    <img src="./images/home-fav.png" alt="home-page" class="object-contain w-full h-full">
                 </div>
-            </ul>
-        </nav>
-    </header>
+                <a href="home.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Home</a>
+              </li>
 
-  <main id="about">
-    <section>
-      <header>
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio page where I showcase a collection of my work. I am passionate about creating unique and impactful projects that demonstrate my skills and creativity. Explore the samples below to get a glimpse of my diverse range of work.</p>
+              <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+                <div class="w-12 h-12 lg:w-24 lg:h-24 object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+                    <img src="./images/newabout.png" alt="about">
+                </div>
+                <a href="aboutnew.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">About</a>
+            </li>
+
+            <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+              <div class="w-12 h-12 lg:w-24 lg:h-24 object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+                  <img src="./images/newresume.png" alt="resume">
+              </div>
+              <a href="resume.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Resume</a>
+          </li>
+
+          <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+            <div class="w-12 h-12 lg:w-24 lg:h-24 object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+                <img src="./images/newportfolio.png" alt="portfolio">
+            </div>
+            <a href="portfolio.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Portfolio</a>
+        </li>
+
+        <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+          <div class="w-12 h-12 lg:w-24 lg:h-24 object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+              <img src="./images/newtestim.png" alt="testimonials">
+          </div>
+          <a href="testimonials.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Testimonials</a>
+      </li>
+
+      <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+        <div class="w-12 h-12 lg:w-24 lg:h-24 object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+            <img src="./images/newcontct.png" alt="contact">
+        </div>
+        <a href="contact.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Contact</a>
+    </li>
+                    
+              </ul>
+          </div>
+          
+      </nav>
       </header>
+      
+      <main class="flex flex-col justify-center items-center lg:flex-1 lg:mx-20 ">
+        
+            <header class="pt-12  text-center">
+                <h2 class="text-2xl font-bold lg:text-5xl">About Me</h2>
+                <p class="text-center">Welcome to my portfolio page where I showcase a collection of my work. I am passionate about creating unique and impactful projects that demonstrate my skills and creativity. Explore the samples below to get a glimpse of my diverse range of work.</p>
+            </header>
+    
+            <div class="flex flex-col mt-6 md:flex-row ">
+                <div class="w-full h-80 md:w-96 md:h-auto ">
+                    <img src="images/photo.jpg" alt="Profile Image" class=" w-full h-72 object-contain">
+                </div>
+    
+                <div class=" flex flex-col flex-wrap w-auto md:flex-row md:flex-nowrap">
+                    <article class="mr-16">
+                        <h3 class="text-center font-bold">UI/UX Designer &amp; Web Developer.</h3>
+                        <p class="text-center">
+                            As a UI/UX Designer and Web Developer, I am dedicated to creating visually appealing and user-friendly experiences. My projects are a blend of design innovation and technical expertise. Explore the samples below to see how I bring ideas to life and solve complex challenges through thoughtful design and development.
+                        </p>
+                    </article>
+                    <table class="flex-1 table-fixed animate-fadeIn mt-6">
+                        <thead>
+                          <tr>
+                            <th class="bg-gray-800 text-white border border-gray-600 py-2 px-4">Birthday:</th>
+                            <th class="bg-gray-800 text-white border border-gray-600 py-2 px-4">4 July 2003</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="border border-gray-600 py-2 px-4">Phone:</td>
+                            <td class="border border-gray-600 py-2 px-4">+251-962-014-763</td>
+                          </tr>
+                          <tr>
+                            <td class="bg-gray-800 text-white border border-gray-600 py-2 px-4">City:</td>
+                            <td class="bg-gray-800 text-white border border-gray-600 py-2 px-4">Addis Ababa, Ethiopia</td>
+                          </tr>
+                          <tr>
+                            <td class="border border-gray-600 py-2 px-4">Age:</td>
+                            <td class="border border-gray-600 py-2 px-4">20</td>
+                          </tr>
+                          <tr>
+                            <td class="bg-gray-800 text-white border border-gray-600 py-2 px-4">Degree:</td>
+                            <td class="bg-gray-800 text-white border border-gray-600 py-2 px-4">Software Eng. BSc.</td>
+                          </tr>
+                          <tr>
+                            <td class="border border-gray-600 py-2 px-4">Email:</td>
+                            <td class="border border-gray-600 py-2 px-4">
+                              <a href="mailto:bereket.kelay@aait.edu.et" class="text-blue-500 hover:underline">bereket.kelay@aait.edu.et</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="bg-gray-800 text-white border border-gray-600 py-2 px-4">Freelance:</td>
+                            <td class="bg-gray-800 text-white border border-gray-600 py-2 px-4">Available</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+    
+        <article class="about__facts-article flex flex-col items-center w-auto">
+            <header class="facts-article__header">
+                <h2 class=" text-center mt-2 font-semibold lg:mt-12">Facts About Me</h2>
+                <p class="text-center">This section contains facts about me, providing insights into various aspects of my professional and personal life. Learn more about my achievements, projects, support hours, and awards.</p>
+            </header>
+    
+            <div class="about__facts-container flex  flex-wrap justify-betwen lg:flex-nowrap">
+                <div class="flex w-full justify-center my-5 lg:my-7">
+                <div class="text-center mr-6">
+                    <i class="fact__icon"></i>
+                    <span class="text-center" >232</span>
+                    <p class="text-center">Happy Clients</p>
+                    </div>
+        
+                    <div class="text-center mr-6">
+                            <i class="facts__icon"></i>
+                            <span class="facts__count" >521</span>
+                            <p class="facts__text">Projects</p>
+                    </div>
+                </div>
+                <div class="flex w-full justify-center mb-5 lg:my-7">
+                    <div class="text-center mr-6">
+                        <i class="facts__icon"></i>
+                        <span class="facts__count" >1463</span>
+                        <p class="facts__text">Hours Of Support</p>
+                    </div>
+                    
+                    <div class="text-center mr-6">
+                        <i class="facts__icon"></i>
+                        <span class="facts__count" >25</span>
+                        <p class="facts__text">Awards</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    
+    </div>
 
-      <div class="about-content">
-        <div class="about-image">
-          <img src="images/photo.jpg" alt="Profile Image">
-          <h3>UI/UX Designer &amp; Web Developer.</h3>
+
+      <footer class="flex justify-center items-center text-center flex-col lg:flex-row  bg-gray-800 text-white w-full mt-auto">
+      <section class="flex flex-col justify-around p-6">
+          <h2 class="p-6">Contact Me</h2>
+          <div class="flex gap-x-5 items-center justify-around">
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="w-30 h-30" src="images/twitter.jpg" alt="Twitter">
+              </div>
+            </a>
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="profile__social-img" src="images/faceb.jpg" alt="Facebook">
+              </div>
+            </a>
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="profile__social-img" src="images/instag.jpg" alt="Instagram">
+              </div>
+            </a>
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="profile__social-img" src="images/tele.jpg" alt="Telegram">
+              </div>
+            </a>
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="profile__social-img" src="images/link.jpg" alt="LinkedIn">
+              </div>
+            </a>
         </div>
+          <p class="footer-section__copyright">&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
+      </section>
+      </footer>
 
-        <div class="about-details">
-          <p>
-            As a UI/UX Designer and Web Developer, I am dedicated to creating visually appealing and user-friendly experiences. My projects are a blend of design innovation and technical expertise. Explore the samples below to see how I bring ideas to life and solve complex challenges through thoughtful design and development.
-          </p>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const menuIcon = document.getElementById("menu-icon");
+          const navLinks = document.getElementById("nav-links");
+    
+          menuIcon.addEventListener("click", function () {
+            navLinks.classList.toggle("hidden");
+          });
+        });
+      </script>
 
-          <table>
-            <tr>
-              <td><strong>Birthday:</strong></td>
-              <td>4 July 2003</td>
-            </tr>
-            <tr>
-              <td><strong>Phone:</strong></td>
-              <td>+251-962-014-763</td>
-            </tr>
-            <tr>
-              <td><strong>City:</strong></td>
-              <td>Addis Ababa, Ethiopia</td>
-            </tr>
-            <tr>
-              <td><strong>Age:</strong></td>
-              <td>20</td>
-            </tr>
-            <tr>
-              <td><strong>Degree:</strong></td>
-              <td>Software Eng. BSc.</td>
-            </tr>
-            <tr>
-              <td><strong>Email:</strong></td>
-              <td><a href="mailto:bereket.kelay@aait.edu.et">bereket.kelay@aait.edu.et</a></td>
-            </tr>
-            <tr>
-              <td><strong>Freelance:</strong></td>
-              <td>Available</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <article>
-      <header>
-        <h2>Facts About Me</h2>
-        <p>This section contains facts about me, providing insights into various aspects of my professional and personal life. Learn more about my achievements, projects, support hours, and awards.</p>
-      </header>
-
-      <div class="facts-container">
-        <div class="fact">
-          <i></i>
-          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1">232</span>
-          <p>Happy Clients</p>
-        </div>
-
-        <div class="fact">
-          <i></i>
-          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1">521</span>
-          <p>Projects</p>
-        </div>
-
-        <div class="fact">
-          <i></i>
-          <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1">1463</span>
-          <p>Hours Of Support</p>
-        </div>
-
-        <div class="fact">
-          <i></i>
-          <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1">25</span>
-          <p>Awards</p>
-        </div>
-      </div>
-    </article>
-  </main>
-
-  <footer>
-    <section>
-      <h2>Contact Me</h2>
-      <div>
-        <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-        <a href="#"><img src="images/faceb.jpg" alt="Facebook"></a>
-        <a href="#"><img src="images/instag.jpg" alt="Instagram"></a>
-        <a href="#"><img src="images/tele.jpg" alt="Telegram"></a>
-        <a href="#"><img src="images/link.jpg" alt="LinkedIn"></a>
-      </div>
-
-      <p>&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
-    </section>
-  </footer>
-</body>
-
-</html>
-
+  </body>
+  
+  </html>

@@ -7,111 +7,177 @@
     <title>MyResume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="flex flex-col max-h-screen text-black text-lg  bg-gray-100 md:h-screen md:text-2xl">
+<div class="flex flex-col justify-around w-full md:justify-center md:items-center lg:flex-row lg:h-auto lg:text-lg">
+    <header class="flex  justify-center w-full items-center lg:ml-20 lg:w-auto">
+        <nav class=" flex flex-col w-full bg-gray-800 text-white text-center py-4 px-2lg:fixed lg:top-0 lg:left-0 lg:z-50 lg:bg-transparent lg:text-black">
+                <i id="menu-icon" class=" text-white text-2xl cursor-pointer ml-70 lg:opacity-0 fa-solid fa-bars"></i>
+            
+                <div class=" flex lg:flex-col items-center justify-center ">
+                <ul id="nav-links" class=" hidden list-none p-0 m-0 flex flex-col justify-center items-center lg:flex" >
+                <li class="flex w-full text-center border-none rounded-full shadow-none m-0  lg:relative lg:mb-6 lg:shadow-md lg:bg-gray-300">
+                    <div class="w-12 h-12  object-contain rounded-full overflow-hidden flex items-center justify-center p-2">
+                        <img src="./images/home-fav.png" alt="home-page" class="object-contain w-full h-full">
+                    </div>
+                    <a href="home.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Home</a>
+                </li>
 
-    <header>
-        <nav class="hamburger">
-            <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
-            <ul>
-                <div class="hamburger-content">
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="resume.html">Resume</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="testimonials.html">Testimonials</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+                    <div class="w-12 h-12 object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+                        <img src="./images/newabout.png" alt="about">
+                    </div>
+                    <a href="aboutnew.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">About</a>
+                </li>
+
+                <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+                <div class="w-12 h-12  object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+                    <img src="./images/newresume.png" alt="resume">
                 </div>
-            </ul>
+                <a href="resume.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Resume</a>
+            </li>
+
+            <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+                <div class="w-12 h-12  object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+                    <img src="./images/newportfolio.png" alt="portfolio">
+                </div>
+                <a href="portfolio.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Portfolio</a>
+            </li>
+
+            <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+            <div class="w-12 h-12  object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+                <img src="./images/newtestim.png" alt="testimonials">
+            </div>
+            <a href="testimonials.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Testimonials</a>
+        </li>
+
+        <li class="flex w-full lg:bg-gray-300  text-center border-none rounded-full shadow-none m-0 lg:relative lg:mb-6 lg:shadow-md">
+            <div class="w-12 h-12  object-cover rounded-full overflow-hidden flex items-center justify-center p-2">
+                <img src="./images/newcontct.png" alt="contact">
+            </div>
+            <a href="contact.html" class="lg:opacity-0 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:text-center">Contact</a>
+        </li>
+                        
+                </ul>
+            </div>
         </nav>
-    </header>
-
-    <main id="contact-main">
-        <section id="contact" class="contact">
-            <div class="container" data-aos="fade-up">
-          
-              <div class="section-title">
-                <h2>Contact</h2>
-              </div>
-          
-              <div class="row mt-1">
-          
-                <div class="col-lg-4">
-                  <div class="info">
-                    <div class="address">
-                      <i class="bi bi-geo-alt"></i>
-                      <h4>Location:</h4>
-                      <p>Addis Abeba, Ethiopia</p>
-                    </div>
-          
-                    <div class="email">
-                      <i class="bi bi-envelope"></i>
-                      <h4>Email:</h4>
-                      <p>bereket.kelay@aait.edu.et</p>
-                    </div>
-          
-                    <div class="phone">
-                      <i class="bi bi-phone"></i>
-                      <h4>Call:</h4>
-                      <p>+251 962 014 763</p>
-                    </div>
-          
-                  </div>
-          
-                </div>
-          
-                <div class="col-lg-8 mt-5 mt-lg-0">
-          
-                  <form action="forms/contact.php" method="post"  class="php-email-form">
-                    <div class="row">
-                      <div class="col-md-6 form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                      </div>
-                      <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                      </div>
-                    </div>
-                    <div class="form-group mt-3">
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group mt-3">
-                      <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="my-3">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
-                    </div>
-                    <div class="text-center"><button type="submit">Send Message</button></div>
-                  </form>
-          
-                </div>
-          
-              </div>
-          
-            </div>
-        </section><!-- End Contact Section -->
+        </header>
+        <main class="flex flex-col justify-center items-center w-full md:mt-64 lg:mt-32 lg:flex-1 lg:mx-20 ">
+          <section class="w-full md:flex-row md:items-center md:justify-center" >
+            <div class="w-full" data-aos="fade-up">
         
-    </main>
-
-    <footer>
-        <section>
-            <h2>Contact Me</h2>
-            <div>
-                <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-                <a href="#"><img src="images/faceb.jpg" alt="Facebook"></a>
-                <a href="#"><img src="images/instag.jpg" alt="Instagram"></a>
-                <a href="#"><img src="images/tele.jpg" alt="Telegram"></a>
-                <a href="#"><img src="images/link.jpg" alt="LinkedIn"></a>
+                <div class="text-3xl text-center font-bold mb-6">
+                    <h2>Contact</h2>
+                </div>
+        
+                <div class="flex flex-wrap w-full mt-1 md:flex-nowrap">
+        
+                    <div class="w-full mb-4">
+                        <div class="info text-center">
+                            <div class="address">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4>Location:</h4>
+                                <p>Addis Abeba, Ethiopia</p>
+                            </div>
+        
+                            <div class="email">
+                                <i class="bi bi-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>bereket.kelay@aait.edu.et</p>
+                            </div>
+        
+                            <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <h4>Call:</h4>
+                                <p>+251 962 014 763</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class=" flex flex-col w-full items-center justify-center  mt-5 md:mt-0">
+                        <form action="forms/contact.php" method="post" class="php-email-form w-full max-w-lg mx-auto p-6 md:p-0 flex flex-col items-center justify-center">
+                            <div class="flex flex-col w-full items-center">
+                                <div class="mb-4">
+                                    <input type="text" name="name" class="form-input" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" class="form-input" name="email" id="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <input type="text" class="form-input" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-input" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="bg-gray-800 text-white rounded-md p-3">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+        
+                </div>
+        
             </div>
-
-            <p>&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
         </section>
-    </footer>
-</body>
+        
+        </main>
+        
+    </div>
 
-</html>
+
+      <footer class="flex justify-center items-center text-center flex-col lg:flex-row  bg-gray-800 text-white w-full mt-auto">
+      <section class="flex flex-col justify-around p-6">
+          <h2 class="p-6">Contact Me</h2>
+          <div class="flex gap-x-5 items-center justify-around">
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="w-30 h-30" src="images/twitter.jpg" alt="Twitter">
+              </div>
+            </a>
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="profile__social-img" src="images/faceb.jpg" alt="Facebook">
+              </div>
+            </a>
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="profile__social-img" src="images/instag.jpg" alt="Instagram">
+              </div>
+            </a>
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="profile__social-img" src="images/tele.jpg" alt="Telegram">
+              </div>
+            </a>
+            <a href="#" class="profile__social-link">
+              <div class="w-10 h-10 object-cover">
+                <img class="profile__social-img" src="images/link.jpg" alt="LinkedIn">
+              </div>
+            </a>
+        </div>
+          <p class="footer-section__copyright">&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
+      </section>
+      </footer>
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const menuIcon = document.getElementById("menu-icon");
+          const navLinks = document.getElementById("nav-links");
+    
+          menuIcon.addEventListener("click", function () {
+            navLinks.classList.toggle("hidden");
+          });
+        });
+      </script>
+
+  </body>
+  
+  </html>
+
