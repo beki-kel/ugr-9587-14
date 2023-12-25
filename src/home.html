@@ -7,63 +7,102 @@
   <title>MyResume</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="min-vh-100 d-flex flex-column flex-lg-row flex-wrap bg-light">
+  <div class="d-flex flex-column flex-lg-row w-100 min-vh-100">
+  <header class=" d-flex justify-content-center align-items-center col-lg-2 h-lg-100">
+    <nav class="navbar w-100 navbar-expand-lg  ">
+      <div class="container-fluid ">
+        <button class="navbar-toggler bg-secondary w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav w-100 me-auto mb-2 mb-lg-0 flex-column w-100 justify-content-center align-items-center" >
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100 ">
+                <a class="nav-link active text-white" aria-current="page" href="home.html">Home</a>
+              </li>
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="aboutnew.html">About</a>
+              </li>
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="resume.html">Resume</a>
+              </li>
 
-  <header>
-      <nav class="hamburger">
-          <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
-          <ul>
-              <div class="hamburger-content">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutnew.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </div>
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="portfolio.html">Portfolio</a>
+              </li>
+
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+              <a class="nav-link active text-white" aria-current="page" href="testimonials.html">Testimonials</a>
+            </li>
+
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="contact.html">contact</a>
+              </li>
           </ul>
-      </nav>
-  </header>
-
-  <main id="home">
-      <article>
-        <h2>Bereket Kelay</h2>
-        <p>I'm a <span>Designer, Developer, Freelancer, Musician</span></p>
-        <div>
-        <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-        <a href="#"><img src="images/faceb.jpg" alt="Facebook"></a>
-        <a href="#"><img src="images/instag.jpg" alt="Instagram"></a>
-        <a href="#"><img src="images/tele.jpg" alt="Telegram"></a>
-        <a href="#"><img src="images/link.jpg" alt="LinkedIn"></a>
+          
         </div>
-      </article>
+      </div>
+    </nav>
+</header>
+
+  <main class="d-flex justify-content-center align-items-center h-100 flex-grow-1 mt-5 pt-0 mt-lg-0 pt-lg-0">
+    <article class="d-flex flex-column align-items-center justify-content-center text-center">
+      <h2 class="text-2xl font-weight-bold">Bereket Kelay</h2>
+      <p class="mb-6 mt-6">I'm a <span class="font-weight-bold">Designer, Developer, Freelancer, Musician</span></p>
+      <div class="d-flex justify-content-center align-items-center gap-2">
+        <a href="#" class="btn btn-dark">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="btn btn-dark">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="btn btn-dark">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="btn btn-dark">
+          <i class="fab fa-telegram"></i>
+        </a>
+        <a href="#" class="btn btn-dark">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </article>
   </main>
 
-  <footer>
-    <section>
-      <h2>Contact Me</h2>
-      <div>
-        <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-        <a href="#"><img src="images/faceb.jpg" alt="Facebook"></a>
-        <a href="#"><img src="images/instag.jpg" alt="Instagram"></a>
-        <a href="#"><img src="images/tele.jpg" alt="Telegram"></a>
-        <a href="#"><img src="images/link.jpg" alt="LinkedIn"></a>
-      </div>
+</div>
 
-      <p>&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
-    </section>
+<footer class="bg-secondary w-100">
+  <section class="d-flex flex-column justify-content-center align-items-center">
+    <h2 class="p-6">Contact Me</h2>
+    <div class="d-flex justify-content-center align-items-center gap-2 ">
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <p class="mt-6">&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
+</section>
+</footer>
 
-    
-      
-  </footer>
 </body>
-
 </html>
-
-

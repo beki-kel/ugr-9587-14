@@ -2,115 +2,153 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyResume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyResume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="min-vh-100 d-flex flex-column flex-lg-row flex-wrap bg-light">
+  <div class="d-flex flex-column flex-lg-row w-100 min-vh-100">
+  <header class=" d-flex justify-content-center align-items-center col-lg-2 h-lg-100">
+    <nav class="navbar w-100 navbar-expand-lg  ">
+      <div class="container-fluid ">
+        <button class="navbar-toggler bg-secondary w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav w-100 me-auto mb-2 mb-lg-0 flex-column w-100 justify-content-center align-items-center" >
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100 ">
+                <a class="nav-link active text-white" aria-current="page" href="home.html">Home</a>
+              </li>
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="aboutnew.html">About</a>
+              </li>
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="resume.html">Resume</a>
+              </li>
 
-    <header>
-        <nav class="hamburger">
-            <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
-            <ul>
-                <div class="hamburger-content">
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="aboutnew.html">About</a></li>
-                  <li><a href="resume.html">Resume</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="testimonials.html">Testimonials</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </div>
-            </ul>
-        </nav>
-    </header>
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="portfolio.html">Portfolio</a>
+              </li>
 
-    <main id="resume">
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+              <a class="nav-link active text-white" aria-current="page" href="testimonials.html">Testimonials</a>
+            </li>
 
-        <section id="resume-item">
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="contact.html">contact</a>
+              </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+</header>
 
-            <h2>Resume</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-
-            <div>
-                <article>
-                    <h3>Summary</h3>
-                    <div>
-                        <h4>Bereket Kelay</h4>
-                        <p><em>Within the realm of software engineering and front-end development, I am Bereket Kelay, an individual driven by innovation and a commitment to meeting deadlines. With a background in software engineering, I have honed my skills in designing and developing user-centered digital and print marketing materials. Over the course of 3+ years, I have navigated the dynamic landscape of software development, applying my expertise from the initial concept to delivering final, polished deliverables.</em></p>
-                    </div>
-                </article>
-                    
-                <h3>Education</h3>
-                
-                <article>
-                    <h4>Bachelor of Software Engineering</h4>
-                    <h5>2017 - 2021</h5>
-                    <p><em>Addis Ababa Institute of Technology, A.A</em></p>
-                    <p>
-                        My Bachelor's in Software Engineering has equipped me with a comprehensive understanding of the field, and I am eager to leverage this knowledge in practical settings to contribute to the dynamic and ever-evolving world of technology.
-                    </p>
-                </article>
-
-                <article>
-                    <h4>Certificate of Fine Arts & Graphic Design</h4>
-                    <h5>2017 - 2018</h5>
-                    <p><em>Kuraz Tech., A.A</em></p>
-                    <p>
-                        This immersive program provided me with a comprehensive understanding of the principles of fine arts and graphic design, covering a diverse range of topics from artistic expression to the practical aspects of designing for various mediums. Through hands-on projects and coursework, I honed my creative skills and gained valuable insights into the dynamic field of graphic design. This educational experience equipped me with the knowledge and proficiency needed to navigate the creative landscape and contribute effectively to the world of visual communication.
-                    </p>
-                </article>
+  <main class="d-flex flex-column justify-content-center align-items-center h-100 flex-grow-1 mt-5 pt-0 mt-lg-0 pt-lg-0">
+    <section class="resume-item">
+        <h2 class=" text-center">Resume</h2>
+        <p class="resume-item__description text-center ">
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+        </p>
+    
+        <div class="resume-item__content d-flex flex-column ">
+          <article class="resume-item__summary">
+            <h3 class=" text-center mb-2">Summary</h3>
+            <div class="summary__content text-center">
+              <h4 class="mb-2">Bereket Kelay</h4>
+              <p>
+                <em>
+                  Within the realm of software engineering and front-end development, I am Bereket Kelay, an individual driven by innovation and a commitment to meeting deadlines...
+                </em>
+              </p>
             </div>
+          </article>
+          <div class="row">
+          <div class="col-md-6">
+            <h3 class="text-center mb-3">Education</h3>
+            
+            <article class="resume-item__education bg-white rounded-5  p-5 mb-5 ">
+              <h4 class="text-center font-normal">Bachelor of Software Engineering</h4>
+              <h5 class="text-center">2017 - 2021</h5>
+              <p class="text-center"><em>Addis Ababa Institute of Technology, A.A</em></p>
+              <p class="education__description">My Bachelor's in Software Engineering has equipped me with a comprehensive understanding of the field, and I am eager to leverage this knowledge in practical settings to contribute to the dynamic and ever-evolving world of technology.</p>
+            </article>
+    
+            <article class="resume-item__education bg-white rounded-5 p-5   mb-5">
+              <h4 class="text-center font-normal">Certificate of Fine Arts & Graphic Design</h4>
+              <h5 class="text-center">2017 - 2018</h5>
+              <p class="text-center"><em>Kuraz Tech., A.A</em></p>
+              <p class="education__description">This immersive program provided me with a comprehensive understanding of the principles of fine arts and graphic design, covering a diverse range of topics from artistic expression to the practical aspects of designing for various mediums...</p>
+            </article>
+          </div>
+    
+          <div class="col-md-6">
+            <h3 class="resume-item__section-title text-center text-3xl font-semibold mb-2">Professional Experience</h3>
+    
+            <article class="resume-item__experience bg-white rounded-5 p-5   mb-5">
+              <h4 class="text-center">Junior Software Developer</h4>
+              <h5 class="text-center">2021 - Present</h5>
+              <p class="text-center"><em>Experion, New York, NY</em></p>
+              <ul class="list-disc">
+                <li>Lead in the design, development, and implementation of innovative software solutions, ensuring high-quality and efficient performance</li>
+                <li>Delegate tasks to the 7 members of the development team, providing guidance on all aspects of the project</li>
+                <li>Supervise the assessment of all software materials to ensure the quality and accuracy of the development</li>
+                <li>Oversee the efficient use of project budgets, ranging from $2,000 - $25,000, ensuring cost-effectiveness in development processes</li>
+              </ul>
+            </article>
+    
+            <article class="resume-item__experience bg-white rounded-5 p-5   mb-5">
+              <h4 class="text-center">Graphic Design Specialist</h4>
+              <h5 class="text-center">2018 - 2019</h5>
+              <p class="text-center"><em>Stepping Stone Advertising, New York, NY</em></p>
+              <ul class="list-disc">
+                <li>Developed numerous marketing programs (logos, brochures, infographics, presentations, and advertisements)</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+              </ul>
+            </article>
+          </div>
+          </div>
+        </div>
+      </section>
+  </main>
 
-            <div>
-                <h3>Professional Experience</h3>
-                <article>
-                    <h4>Junior Software Developer</h4>
-                    <h5>2021 - Present</h5>
-                    <p><em>Experion, New York, NY</em></p>
-                    <ul>
-                        <li>Lead in the design, development, and implementation of innovative software solutions, ensuring high-quality and efficient performance</li>
-                        <li>Delegate tasks to the 7 members of the development team, providing guidance on all aspects of the project</li>
-                        <li>Supervise the assessment of all software materials to ensure the quality and accuracy of the development</li>
-                        <li>Oversee the efficient use of project budgets, ranging from $2,000 - $25,000, ensuring cost-effectiveness in development processes</li>
-                    </ul>
-                </article>
+</div>
 
-                <article>
-                    <h4>Graphic Design Specialist</h4>
-                    <h5>2018 - 2019</h5>
-                    <p><em>Stepping Stone Advertising, New York, NY</em></p>
-                    <ul>
-                        <li>Developed numerous marketing programs (logos, brochures, infographics, presentations, and advertisements)</li>
-                        <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                        <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                        <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                    </ul>
-                </article>
-            </div>
+<footer class="bg-secondary w-100 ">
+  <section class="d-flex flex-column justify-content-center align-items-center">
+    <h2 class="p-6">Contact Me</h2>
+    <div class="d-flex justify-content-center align-items-center gap-2 ">
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <p class="mt-6">&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
+</section>
+</footer>
 
-        </section>
-    </main>
-
-    <footer>
-        <section>
-            <h2>Contact Me</h2>
-            <div>
-                <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-        <a href="#"><img src="images/faceb.jpg" alt="Facebook"></a>
-        <a href="#"><img src="images/instag.jpg" alt="Instagram"></a>
-        <a href="#"><img src="images/tele.jpg" alt="Telegram"></a>
-        <a href="#"><img src="images/link.jpg" alt="LinkedIn"></a>
-            </div>
-
-            <p>&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
-        </section>
-    </footer>
 </body>
-
 </html>

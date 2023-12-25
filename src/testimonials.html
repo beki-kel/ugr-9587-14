@@ -7,137 +7,199 @@
   <title>MyResume</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
+  
+
 </head>
 
-<body>
+<body class="min-vh-100 d-flex flex-column flex-lg-row flex-wrap bg-light">
+  <div class="d-flex flex-column flex-lg-row w-100 min-vh-100">
+  <header class=" d-flex justify-content-start align-items-start col-lg-2 h-lg-100">
+    <nav class="navbar w-100 navbar-expand-lg  sticky-top">
+      <div class="container-fluid ">
+        <button class="navbar-toggler bg-secondary w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav w-100 me-auto mb-2 mb-lg-0 flex-column w-100 justify-content-center align-items-center" >
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100 ">
+                <a class="nav-link active text-white" aria-current="page" href="home.html">Home</a>
+              </li>
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="aboutnew.html">About</a>
+              </li>
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="resume.html">Resume</a>
+              </li>
 
-  <header>
-      <nav class="hamburger">
-          <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
-          <ul>
-              <div class="hamburger-content">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutnew.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </div>
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="portfolio.html">Portfolio</a>
+              </li>
+
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+              <a class="nav-link active text-white" aria-current="page" href="testimonials.html">Testimonials</a>
+            </li>
+
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="contact.html">contact</a>
+              </li>
           </ul>
-      </nav>
-  </header>
+          
+        </div>
+      </div>
+    </nav>
+</header>
 
-    <main id="testimonials-main">
-        <section id="testimonials" class="testimonials section-bg" data-aos="fade-up">
-            <div class="container" data-aos="fade-up">
-          
-              <div class="section-title">
-                <h2>Testimonials</h2>
-              </div>
-          
-              <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-                <div class="swiper-wrapper">
-          
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <img src="images/img-2.jpg" class="testimonial-img" alt="">
-                      <h3>Solomon Yohannes</h3>
-                      <h4>Ceo &amp; Founder</h4>
-                      <p>
-                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Bereket is an incredible software engineer. His innovative approach and commitment to deadlines have been instrumental in the success of our projects. He navigates the dynamic landscape of software development with expertise, delivering polished and user-centered solutions.
-                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-          
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <img src="images/avatar3.jpg" class="testimonial-img" alt="">
-                      <h3>Sara Tenaye</h3>
-                      <h4>Designer</h4>
-                      <p>
-                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Bereket's frontend development skills are outstanding. He has a keen eye for design and consistently produces creative and visually appealing solutions. It's been a pleasure working with someone who brings both technical expertise and artistic flair to the table.
-                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-          
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <img src="images/avatar2.jpg" class="testimonial-img" alt="">
-                      <h3>Dagim Biruk</h3>
-                      <h4>Store Owner</h4>
-                      <p>
-                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Bereket's frontend development skills are outstanding. He has a keen eye for design and consistently produces creative and visually appealing solutions. It's been a pleasure working with someone who brings both technical expertise and artistic flair to the table.
-                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-          
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <img src="images/Nati.jpg" class="testimonial-img" alt="">
-                      <h3>Matthew Alemayehu</h3>
-                      <h4>Freelancer</h4>
-                      <p>
-                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Bereket's collaboration on freelance projects has been exceptional. His commitment to quality and efficiency sets him apart. His ability to lead development teams and oversee project budgets showcases his professionalism and dedication.
-                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-                  
-          
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <img src="images/sami.jpg" class="testimonial-img" alt="">
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
-                      <p>
-                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        Bereket's skills as a software engineer and frontend developer have significantly contributed to our project's success. His ability to navigate challenges and ensure the quality of the development process is commendable. Working with him has been a valuable experience.
-                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-          
-            </div>
-        </section>
-    </main>
-    
-          
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-          
-            </div>
-          </section>
-          
-    </main>
-    
-    <footer>
-        <section>
-            <h2>Contact Me</h2>
-            <div>
-                <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-        <a href="#"><img src="images/faceb.jpg" alt="Facebook"></a>
-        <a href="#"><img src="images/instag.jpg" alt="Instagram"></a>
-        <a href="#"><img src="images/tele.jpg" alt="Telegram"></a>
-        <a href="#"><img src="images/link.jpg" alt="LinkedIn"></a>
-            </div>
+  <main class="d-flex flex-column justify-content-center align-items-center h-100 flex-grow-1 my-5 pt-0 mt-lg-0 pt-lg-0">
+    <section class="testimonials bg-section" data-aos="fade-up">
+      <div class="container mx-auto" data-aos="fade-up">
 
-            <p>&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
-        </section>
-    </footer>
+          <div class="row justify-content-center">
+              <div class="col-12 col-md-6">
+                  <h2 class=" text-center testimonials__title">Testimonials</h2>
+              </div>
+          </div>
+
+          <div class="row justify-content-center">
+              <div class="col-12 col-md-8">
+                  <div class="swiper testimonials-slider" data-aos="fade-up" data-aos-delay="100">
+                      <div class="swiper-wrapper">
+
+                          <div class="swiper-slide d-flex justify-content-center mb-5">
+                              <div class="bg-white rounded-5 p-5 d-flex flex-column align-items-center">
+                                  <div class="card-image d-flex justify-content-center mt-5">
+                                      <figure class="col-6 col-md-6 col-lg-4 object-fit-cover rounded-full overflow-hidden d-flex items-center justify-content-center">
+                                          <img src="images/img-2.jpg" alt="Testimonial Image" class="testimonial-img w-100">
+                                      </figure>
+                                  </div>
+                                  <div class="card-content box">
+                                      <p class="text-lg text-center testimonial-item__name">Solomon Yohannes</p>
+                                      <p class="text-sm text-center testimonial-item__role">Ceo & Founder</p>
+                                      <div class="testimonial-item__quote d-flex items-center justify-content-center">
+                                          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                          Bereket is an incredible software engineer. His innovative approach and commitment to deadlines have been instrumental in the success of our projects. He navigates the dynamic landscape of software development with expertise, delivering polished and user-centered solutions.
+                                          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="swiper-slide d-flex justify-content-center mb-5">
+                            <div class="bg-white rounded-5 p-5  d-flex flex-column align-items-center">
+                                <div class="card-image d-flex justify-content-center pt-5">
+                                    <figure class="col-6 col-md-6  col-lg-8 object-fit-cover rounded-full overflow-hidden d-flex items-center justify-content-center">
+                                        <img src="images/avatar3.jpg" alt="Testimonial Image" class="testimonial-img w-100">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="text-lg text-center testimonial-item__name">Sara Tenaye</p>
+                                    <p class="text-sm text-center testimonial-item__role">Designer</p>
+                                    <div class="testimonial-item__quote d-flex items-center justify-content-center">
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        Bereket's frontend development skills are outstanding. He has a keen eye for design and consistently produces creative and visually appealing solutions. It's been a pleasure working with someone who brings both technical expertise and artistic flair to the table.
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide d-flex justify-content-center mb-5">
+                            <div class="bg-white rounded-5 p-5  d-flex flex-column align-items-center">
+                                <div class="card-image d-flex justify-content-center pt-5">
+                                    <figure class="w-32 h-32 object-fit-cover rounded-full overflow-hidden d-flex items-center justify-content-center">
+                                        <img src="images/avatar2.jpg" alt="Testimonial Image" class="testimonial-img">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <p class="text-lg text-center testimonial-item__name">Dagim Biruk</p>
+                                    <p class="text-sm text-center testimonial-item__role">Store Owner</p>
+                                    <div class="testimonial-item__quote d-flex items-center justify-content-center">
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        Bereket's frontend development skills are outstanding. He has a keen eye for design and consistently produces creative and visually appealing solutions. It's been a pleasure working with someone who brings both technical expertise and artistic flair to the table.
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide d-flex justify-content-center mb-5">
+                            <div class="bg-white rounded-5 p-5  d-flex flex-column align-items-center h-100">
+                                <div class="card-image d-flex justify-content-center pt-5">
+                                    <figure class="w-md-50 w-md-50 object-fit-cover rounded-full overflow-hidden d-flex items-center justify-content-center">
+                                        <img src="images/Nati.jpg" alt="Testimonial Image" class="testimonial-img w-100">
+                                    </figure>
+                                </div>
+                                <div class="card-content mb-md-5">
+                                    <p class="text-lg text-center testimonial-item__name">Matthew Alemayehu</p>
+                                    <p class="text-sm text-center testimonial-item__role">Freelancer</p>
+                                    <div class="testimonial-item__quote d-flex items-center justify-content-center">
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        Bereket's collaboration on freelance projects has been exceptional. His commitment to quality and efficiency sets him apart. His ability to lead development teams and oversee project budgets showcases his professionalism and dedication.
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide d-flex justify-content-center mb-5">
+                            <div class="bg-white rounded-5 p-5  d-flex flex-column align-items-center">
+                                <div class="card-image d-flex justify-content-center pt-5">
+                                    <figure class="w-32 h-32 object-fit-cover rounded-full overflow-hidden d-flex items-center justify-content-center">
+                                        <img src="images/sami.jpg" alt="Testimonial Image" class="testimonial-img">
+                                    </figure>
+                                </div>
+                                <div class="card-content mb-md-4">
+                                    <p class="text-lg text-center testimonial-item__name">John Larson</p>
+                                    <p class="text-sm text-center testimonial-item__role">Entrepreneur</p>
+                                    <div class="testimonial-item__quote d-flex items-center justify-content-center">
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        Bereket's skills as a software engineer and frontend developer have significantly contributed to our project's success. His ability to navigate challenges and ensure the quality of the development process is commendable. Working with him has been a valuable experience.
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  </main>
+
+</div>
+
+<footer class="bg-secondary w-100 ">
+  <section class="d-flex flex-column justify-content-center align-items-center">
+    <h2 class="p-6">Contact Me</h2>
+    <div class="d-flex justify-content-center align-items-center gap-2 ">
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <p class="mt-6">&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
+</section>
+</footer>
+
 </body>
-
 </html>

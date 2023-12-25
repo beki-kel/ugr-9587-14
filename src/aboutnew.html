@@ -2,137 +2,180 @@
 <html lang="en">
 
 <head>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyResume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyResume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-  
-  </head>
-  
-  <body>
-  
-    <header>
-        <nav class="hamburger">
-            <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
-            <ul>
-                <div class="hamburger-content">
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="aboutnew.html">About</a></li>
-                  <li><a href="resume.html">Resume</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="testimonials.html">Testimonials</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </div>
-            </ul>
-        </nav>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
+</head>
+
+<body class="min-vh-100 d-flex flex-column flex-lg-row flex-wrap bg-light">
+  <div class="d-flex flex-column flex-lg-row w-100 min-vh-100">
+  <header class=" d-flex justify-content-center align-items-center col-lg-2 h-lg-100">
+    <nav class="navbar w-100 navbar-expand-lg  ">
+      <div class="container-fluid ">
+        <button class="navbar-toggler bg-secondary w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav w-100 me-auto mb-2 mb-lg-0 flex-column w-100 justify-content-center align-items-center" >
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100 ">
+                <a class="nav-link active text-white" aria-current="page" href="home.html">Home</a>
+              </li>
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="aboutnew.html">About</a>
+              </li>
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="resume.html">Resume</a>
+              </li>
+
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="portfolio.html">Portfolio</a>
+              </li>
+
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+              <a class="nav-link active text-white" aria-current="page" href="testimonials.html">Testimonials</a>
+            </li>
+
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="contact.html">contact</a>
+              </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+</header>
+
+  <main class="d-flex flex-column justify-content-center align-items-center h-100 flex-grow-1 mt-5 pt-0 mt-lg-0 pt-lg-0">
+    <header class="text-center">
+      <h2>About Me</h2>
+      <p>Welcome to my portfolio page where I showcase a collection of my work. I am passionate about creating unique and impactful projects that demonstrate my skills and creativity. Explore the samples below to get a glimpse of my diverse range of work.</p>
     </header>
 
-  <main id="about">
-    <section>
-      <header>
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio page where I showcase a collection of my work. I am passionate about creating unique and impactful projects that demonstrate my skills and creativity. Explore the samples below to get a glimpse of my diverse range of work.</p>
-      </header>
+    <div class="d-flex flex-wrap mt-4 ms-md-5 ps-md-2">
+      <div class="d-flex flex-wrap mt-4 flex-md-nowrap gap-2">
+      <div>
+        <img src="images/photo.jpg" alt="Profile Image" class="img-fluid">
+      </div>
 
-      <div class="about-content">
-        <div class="about-image">
-          <img src="images/photo.jpg" alt="Profile Image">
-          <h3>UI/UX Designer &amp; Web Developer.</h3>
-        </div>
-
-        <div class="about-details">
-          <p>
+      <div class="d-flex flex-column flex-md-row flex-md-nowrap mt-4">
+        <article class="mb-4 mx-3">
+          <h3 class="text-center ">UI/UX Designer &amp; Web Developer.</h3>
+          <p class="text-center">
             As a UI/UX Designer and Web Developer, I am dedicated to creating visually appealing and user-friendly experiences. My projects are a blend of design innovation and technical expertise. Explore the samples below to see how I bring ideas to life and solve complex challenges through thoughtful design and development.
           </p>
+        </article>
 
-          <table>
+        <table class="table table-bordered me-md-3">
+          <thead>
             <tr>
-              <td><strong>Birthday:</strong></td>
-              <td>4 July 2003</td>
+              <th class="bg-dark text-white py-2 px-4">Birthday:</th>
+              <th class="bg-dark text-white py-2 px-4">4 July 2003</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-2 px-4">Phone:</td>
+              <td class="py-2 px-4">+251-962-014-763</td>
             </tr>
             <tr>
-              <td><strong>Phone:</strong></td>
-              <td>+251-962-014-763</td>
+              <td class="bg-dark text-white py-2 px-4">City:</td>
+              <td class="bg-dark text-white py-2 px-4">Addis Ababa, Ethiopia</td>
             </tr>
             <tr>
-              <td><strong>City:</strong></td>
-              <td>Addis Ababa, Ethiopia</td>
+              <td class="py-2 px-4">Age:</td>
+              <td class="py-2 px-4">20</td>
             </tr>
             <tr>
-              <td><strong>Age:</strong></td>
-              <td>20</td>
+              <td class="bg-dark text-white py-2 px-4">Degree:</td>
+              <td class="bg-dark text-white py-2 px-4">Software Eng. BSc.</td>
             </tr>
             <tr>
-              <td><strong>Degree:</strong></td>
-              <td>Software Eng. BSc.</td>
+              <td class="py-2 px-4">Email:</td>
+              <td class="py-2 px-4">
+                <a href="mailto:bereket.kelay@aait.edu.et" class="text-blue-500 hover:underline">bereket.kelay@aait.edu.et</a>
+              </td>
             </tr>
             <tr>
-              <td><strong>Email:</strong></td>
-              <td><a href="mailto:bereket.kelay@aait.edu.et">bereket.kelay@aait.edu.et</a></td>
+              <td class="bg-dark text-white py-2 px-4">Freelance:</td>
+              <td class="bg-dark text-white py-2 px-4">Available</td>
             </tr>
-            <tr>
-              <td><strong>Freelance:</strong></td>
-              <td>Available</td>
-            </tr>
-          </table>
-        </div>
+          </tbody>
+        </table>
       </div>
-    </section>
+    </div>
+      <article class="d-flex  flex-column  mt-4">
+        <header>
+          <h2 class="text-center mt-2">Facts About Me</h2>
+          <p class="text-center">This section contains facts about me, providing insights into various aspects of my professional and personal life. Learn more about my achievements, projects, support hours, and awards.</p>
+        </header>
 
-    <article>
-      <header>
-        <h2>Facts About Me</h2>
-        <p>This section contains facts about me, providing insights into various aspects of my professional and personal life. Learn more about my achievements, projects, support hours, and awards.</p>
-      </header>
+        <div class=" d-flex flex-nowrap justify-content-center gap-5">
+          <div class="d-flex flex-column justify-content-center  my-5 flex-md-row gap-md-5 ms-md-5">
+            <div class="text-center">
+              <i class="fact__icon"></i>
+              <span class="text-center">232</span>
+              <p class="text-center">Happy Clients</p>
+            </div>
 
-      <div class="facts-container">
-        <div class="fact">
-          <i></i>
-          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1">232</span>
-          <p>Happy Clients</p>
+            <div class="text-center">
+              <i class="facts__icon"></i>
+              <span class="facts__count">521</span>
+              <p class="facts__text">Projects</p>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column justify-content-center my-md-5 flex-md-row gap-md-5 me-md-5">
+            <div class="text-center">
+              <i class="facts__icon"></i>
+              <span class="facts__count">1463</span>
+              <p class="facts__text">Hours Of Support</p>
+            </div>
+
+            <div class="text-center">
+              <i class="facts__icon"></i>
+              <span class="facts__count">25</span>
+              <p class="facts__text">Awards</p>
+            </div>
+          </div>
         </div>
-
-        <div class="fact">
-          <i></i>
-          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1">521</span>
-          <p>Projects</p>
-        </div>
-
-        <div class="fact">
-          <i></i>
-          <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1">1463</span>
-          <p>Hours Of Support</p>
-        </div>
-
-        <div class="fact">
-          <i></i>
-          <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1">25</span>
-          <p>Awards</p>
-        </div>
-      </div>
-    </article>
+      </article>
+    </div>
   </main>
 
-  <footer>
-    <section>
-      <h2>Contact Me</h2>
-      <div>
-        <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-        <a href="#"><img src="images/faceb.jpg" alt="Facebook"></a>
-        <a href="#"><img src="images/instag.jpg" alt="Instagram"></a>
-        <a href="#"><img src="images/tele.jpg" alt="Telegram"></a>
-        <a href="#"><img src="images/link.jpg" alt="LinkedIn"></a>
-      </div>
+</div>
 
-      <p>&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
-    </section>
-  </footer>
+<footer class="bg-secondary w-100 ">
+  <section class="d-flex flex-column justify-content-center align-items-center">
+    <h2 class="p-6">Contact Me</h2>
+    <div class="d-flex justify-content-center align-items-center gap-2 ">
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <p class="mt-6">&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
+</section>
+</footer>
+
 </body>
-
 </html>
-

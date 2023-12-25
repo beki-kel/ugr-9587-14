@@ -2,120 +2,161 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyResume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyResume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="min-vh-100 d-flex flex-column flex-lg-row flex-wrap bg-light">
+  <div class="d-flex flex-column flex-lg-row w-100 min-vh-100">
+  <header class=" d-flex justify-content-center align-items-center col-lg-2 h-lg-100">
+    <nav class="navbar w-100 navbar-expand-lg  ">
+      <div class="container-fluid ">
+        <button class="navbar-toggler bg-secondary w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav w-100 me-auto mb-2 mb-lg-0 flex-column w-100 justify-content-center align-items-center" >
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100 ">
+                <a class="nav-link active text-white" aria-current="page" href="home.html">Home</a>
+              </li>
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="aboutnew.html">About</a>
+              </li>
+            
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="resume.html">Resume</a>
+              </li>
 
-    <header>
-        <nav class="hamburger">
-            <div class="hamburger-menu"><i class="fa-solid fa-bars"></i></div>
-            <ul>
-                <div class="hamburger-content">
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="aboutnew.html">About</a></li>
-                  <li><a href="resume.html">Resume</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="testimonials.html">Testimonials</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </div>
-            </ul>
-        </nav>
-    </header>
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="portfolio.html">Portfolio</a>
+              </li>
 
-    <main id="portfolio">
-        
-            <article>
-                <h2>Portfolio</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-            </article>
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+              <a class="nav-link active text-white" aria-current="page" href="testimonials.html">Testimonials</a>
+            </li>
 
-            <article>
-                <h3>Filter</h3>
-                <ul>
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-app">Web1</li>
-                    <li data-filter=".filter-card">Web2</li>
-                    <li data-filter=".filter-web">Video</li>
-                    <li data-filter=".filter-web">Audio</li>
-                </ul>
-            </article>
+              <li class="nav-item w-100 text-center bg-secondary p-2 m-2 rounded w-100">
+                <a class="nav-link active text-white" aria-current="page" href="contact.html">contact</a>
+              </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+</header>
 
-            <article>
-                <div>
-                    <div class="port-fig">
-                        <h4>Web 1</h4>
-                        <p>Web</p>
-                        <figure class="port-fig-continer">
-                            <img src="images/web1.jpg" alt="Web Screenshot">
-                            <figcaption>
-                                <p>
-                                    Explore this captivating web project that I had the pleasure of working on. In this endeavor, I combined creativity and functionality to deliver an engaging user experience. The sleek design and intuitive navigation enhance the overall usability, ensuring a seamless journey for visitors. From concept to execution, every detail has been meticulously crafted to reflect a harmonious blend of aesthetics and purpose. Take a closer look at this snapshot to witness the intersection of design innovation and user-centric development.
-                                </p>
-                                <a href="https://www.bing.com/images/search?view=detailV2&ccid=fmzbGsps&id=AE6D95BFDC2C149A84790C21482843B3C9DB0EFC&thid=OIP.fmzbGsps544G71GL4_4YugHaFH&mediaurl=https%3a%2f%2fmondrian.mashable.com%2fwp-content%25252Fuploads%25252F2007%25252F08%25252Fwebshots.jpg%25252Ffull-fit-in__1200x2000.jpg%3fsignature%3dO3V6bYerePZvJI7IXmE5yHVLNx0%3d%26source%3dhttp%3a%252F%252Fmashable.com&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.7e6cdb1aca6ce78e06ef518be3fe18ba%3frik%3d%252fA7bybNDKEghDA%26pid%3dImgRaw%26r%3d0&exph=2000&expw=2894&q=web+screenshot&simid=608010337131241555&FORM=IRPRST&ck=EB620170608F2BC6916FD9D152BC347D&selectedIndex=0">More</a>
-                            </figcaption>
-                        </figure>
-                    </div>
+  <main class="d-flex flex-column justify-content-center align-items-center mt-3 mx-md-5 pt-0 mt-lg-0 pt-lg-0">
+    <article class=" d-flex flex-column ">
+        <h2 class=" text-center ">Portfolio</h2>
+        <p class=" text-center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </article>
+    
+      <article class=" d-flex flex-column w-100">
+        <h3 class=" text-center">Filter</h3>
+        <ul class="list-unstyled d-flex flex-row justify-content-center">
+          <li class=" cursor-pointer py-2 px-4 border border-solid border-dark rounded-5 m-2 filter-active" data-filter="*">All</li>
+          <li class=" cursor-pointer py-2 px-2 border border-solid border-dark rounded-5 m-2" data-filter=".filter-app">Web1</li>
+          <li class=" cursor-pointer py-2 px-2 border border-solid border-dark rounded-5 m-2" data-filter=".filter-card">Web2</li>
+          <li class=" cursor-pointer py-2 px-2 border border-solid border-dark rounded-5 m-2" data-filter=".filter-web">Video</li>
+          <li class=" cursor-pointer py-2 px-2 border border-solid border-dark rounded-5 m-2" data-filter=".filter-web">Audio</li>
+        </ul>
+      </article>
+    
 
-                    <div class="port-fig">
-                        <h4>Web 2</h4>
-                        <p>Web</p>
-                        <figure class="port-fig-continer">
-                            <img src="images/web2.jpg" alt="Web Screenshot">
-                            <figcaption>
-                                <p>
-                                    Explore this captivating web project that I had the pleasure of working on. In this endeavor, I combined creativity and functionality to deliver an engaging user experience. The sleek design and intuitive navigation enhance the overall usability, ensuring a seamless journey for visitors. From concept to execution, every detail has been meticulously crafted to reflect a harmonious blend of aesthetics and purpose. Take a closer look at this snapshot to witness the intersection of design innovation and user-centric development.
-                                </p>
-                                <a href="https://blog.eduonix.com/wp-content/uploads/2014/01/final_homepage1.jpg">More</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="port-vid">
-                        <h4>Video</h4>
-                        <p>Video</p>
-                        <figure >
-                            <video src="images/Day%20in%20the%20life%20of%20a%20Web%20Designer.mp4" controls autoplay>Day in the life of a Web Designer</video>
-
-                        </figure>
-                    </div>
-
-                    <div>
-                        <h4>Audio</h4>
-                        <p>Audio</p>
-                        <figure>
-                            <audio src="አገለግልሃለሁ_Ageleglihalew_New_Amharic_Protestant_Mezmur_2023_20.m4a" controls autoplay></audio>
-                        </figure>
-                    </div>
-
-                </div>
-            </article>
-
-        
-    </main>
-
-    <footer>
-        <section>
-            <h2>Contact Me</h2>
-            <div>
-                <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
-                <a href="#"><img src="images/faceb.jpg" alt="Facebook"></a>
-                <a href="#"><img src="images/instag.jpg" alt="Instagram"></a>
-                <a href="#"><img src="images/tele.jpg" alt="Telegram"></a>
-                <a href="#"><img src="images/link.jpg" alt="LinkedIn"></a>
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+            <div class=" text-center bg-white flex-1 my-5 rounded-5">
+              <h4 >Web 1</h4>
+              <p>Web</p>
+              <figure>
+                <img class="img-fluid" src="images/web1.jpg" alt="Web Screenshot">
+                <figcaption >
+                  <p >
+                    Explore this captivating web project that I had the pleasure of working on. In this endeavor, I combined creativity and functionality to deliver an engaging user experience. The sleek design and intuitive navigation enhance the overall usability, ensuring a seamless journey for visitors. From concept to execution, every detail has been meticulously crafted to reflect a harmonious blend of aesthetics and purpose. Take a closer look at this snapshot to witness the intersection of design innovation and user-centric development.
+                  </p>
+                  <a href="https://www.bing.com/images/search?view=detailV2&ccid=fmzbGsps&id=AE6D95BFDC2C149A84790C21482843B3C9DB0EFC&thid=OIP.fmzbGsps544G71GL4_4YugHaFH&mediaurl=https%3a%2f%2fmondrian.mashable.com%2fwp-content%25252Fuploads%25252F2007%25252F08%25252Fwebshots.jpg%25252Ffull-fit-in__1200x2000.jpg%3fsignature%3dO3V6bYerePZvJI7IXmE5yHVLNx0%3d%26source%3dhttp%3a%252F%252Fmashable.com&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.7e6cdb1aca6ce78e06ef518be3fe18ba%3frik%3d%252fA7bybNDKEghDA%26pid%3dImgRaw%26r%3d0&exph=2000&expw=2894&q=web+screenshot&simid=608010337131241555&FORM=IRPRST&ck=EB620170608F2BC6916FD9D152BC347D&selectedIndex=0">More</a>
+                </figcaption>
+              </figure>
             </div>
+            </div>
+    
+            <div class="col">
+                <div class=" text-center bg-white flex-1 my-5 rounded-5">
+                    <h4>Web 2</h4>
+                    <p >Web</p>
+                    <figure>
+                      <img class="img-fluid" src="images/web2.jpg" alt="Web Screenshot">
+                      <figcaption >
+                        <p >
+                          Explore this captivating web project that I had the pleasure of working on. In this endeavor, I combined creativity and functionality to deliver an engaging user experience. The sleek design and intuitive navigation enhance the overall usability, ensuring a seamless journey for visitors. From concept to execution, every detail has been meticulously crafted to reflect a harmonious blend of aesthetics and purpose. Take a closer look at this snapshot to witness the intersection of design innovation and user-centric development.
+                        </p>
+                        <a  href="https://blog.eduonix.com/wp-content/uploads/2014/01/final_homepage1.jpg">More</a>
+                      </figcaption>
+                    </figure>
+                  </div>
+            </div>
+          </div>
+    
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="bg-white my-5 h-75">
+                    <h4 class="text-center">Video</h4>
+                    <p>Video</p>
+                    <figure>
+                      <video class="embed-responsive-16by9 w-100" src="images/Day%20in%20the%20life%20of%20a%20Web%20Designer.mp4" controls autoplay>Day in the life of a Web Designer</video>
+                    </figure>
+                  </div>
+            </div>
+    
+            <div class="col">
+                <div class="d-flex flex-column justify-content-center align-items-center bg-white my-5 h-75">
+                    <h4 class="text-center">Audio</h4>
+                    <p >Audio</p>
+                    <figure>
+                      <audio class="object-contain" src="./images/አገለግልሃለሁ_Ageleglihalew_New_Amharic_Protestant_Mezmur_2023_20.m4a" controls autoplay></audio>
+                    </figure>
+                  </div>
+            </div>
+          </div>
+    
 
-            <p>&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
-        </section>
-    </footer>
+
+  </main>
+
+</div>
+
+<footer class="bg-secondary w-100">
+  <section class="d-flex flex-column justify-content-center align-items-center">
+    <h2 class="p-6">Contact Me</h2>
+    <div class="d-flex justify-content-center align-items-center gap-2 ">
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a href="#" class="btn btn-dark">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <p class="mt-6">&copy; 2023 <strong>MyResume</strong>. All Rights Reserved</p>
+</section>
+</footer>
+
 </body>
-
 </html>
-
